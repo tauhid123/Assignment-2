@@ -55,7 +55,8 @@ i.fa-solid.fa-bars {
 
 /* header */
 header {
-    background: linear-gradient(0deg, rgb(70 70 70 / 42%), rgb(119 119 119 / 0%) 100%)
+    background: linear-gradient(0deg, rgb(70 70 70 / 42%), rgb(119 119 119 / 0%) 100%);
+    position: relative;
 }
 .header-container {
     max-width: 1060px;
@@ -98,12 +99,6 @@ nav .nav-menu > ul > li {
 }
 
 /* Hero-Section */
-.hero-container {
-    /* background-image: url('../images/Images\ 2.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain; */
-}
 .hero-child1 {
     padding-bottom: 100px;
     width: 50%;
@@ -135,7 +130,7 @@ nav .nav-menu > ul > li {
     border-radius: 50px;
     padding: 20px 40px;
     background-color: rgba(0, 0, 0, 0);
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .hero-card1 {
     display: inline-block;
@@ -161,7 +156,7 @@ nav .nav-menu > ul > li {
 }
 .hero-card2 {
     position: absolute;
-    bottom: 10px;
+    bottom: 100px;
     right: 700px;
     display: inline-block;
     background-color: rgba(128, 128, 128, 0.411);
@@ -383,8 +378,10 @@ text-align: center;
     }
     .hero-card2 {
         position: absolute;
-        bottom: -150px;
+        bottom: 150px;
         left: 20px;
+        width: 40%;
+        display: inline-block;
     }
 
     /* Habit-Section */
