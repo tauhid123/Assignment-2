@@ -47,7 +47,7 @@
 .width65 {
     width: 65%;
     text-align: center;
-    margin: auto;
+    margin: 40px auto;
 }
 
 i.fa-solid.fa-bars {
@@ -188,9 +188,7 @@ nav .nav-menu > ul > li {
     justify-content: center;
     margin: 0 10px 0 0 ;
 }
-.fa-play{
-    
-}
+
 /* Main Section */
 main {
     max-width: 1060px;
@@ -221,7 +219,16 @@ main {
 .run-child > .description {
     width: 75%;
 }
-
+/* Why Section */
+#why {
+    padding: 100px 0;
+}
+.why-parent {
+    gap: 30px;
+}
+.fa-medal, .fa-id-card-clip, .fa-shield-halved {
+    font-size: 100px;
+}
 /* Calculator-Section */
 
 #calc {
@@ -402,6 +409,10 @@ text-align: center;
     .run-image {
         width: 100%;
         margin-top: 20px;
+    }
+    .why-parent {
+        flex-direction: column;
+        text-align: center;
     }
 
     /* Calculator */
