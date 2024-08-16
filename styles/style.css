@@ -402,6 +402,7 @@ text-align: center;
     /* Calculator */
     .calc-parents {
         flex-direction: column;
+        text-align: center;
     }
     .calc-child1, .calc-child2 {
         width: 100%;
