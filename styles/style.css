@@ -15,19 +15,38 @@
     color: white;
 }
 .btn {
-    background-color: #E6533C;
     color: white;
-    border: none;
     border-radius: 50px;
     padding: 20px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    margin-right: 15px;
+    background-color: #E6533C;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.align-center{
+    text-align: center;
+}
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF80;
+}
+.width75 {
+    width: 75%;
+    margin: auto;
+}
+
+i.fa-solid.fa-bars {
+    display: none;
 }
 
 /* header */
 header {
-    width:1060px;
+    background: linear-gradient(0deg, rgb(70 70 70 / 42%), rgb(119 119 119 / 0%) 100%)
+}
+.header-container {
+    max-width: 1060px;
     margin:auto;
 }
 a{
@@ -68,21 +87,23 @@ nav .nav-menu > ul > li {
 
 /* Hero-Section */
 .hero-container {
-    background-image: url('../images/Images\ 2.png');
+    /* background-image: url('../images/Images\ 2.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: contain; */
 }
 .hero-child1 {
     padding-bottom: 100px;
+    width: 50%;
 }
 .hero-child2 {
     text-align: right;
+    width: 50%;
 }
 .hero-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 900;
-    line-height: 80px;
+    /* line-height: 80px; */
 }
 .title-special {
     font-family:Style Script ;
@@ -93,7 +114,7 @@ nav .nav-menu > ul > li {
     font-size: 16px;
     font-weight: 400;
     color: #FFFFFF80;
-    width: 500px;
+    /* width: 500px; */
     margin: 0 0 30px 0;
 }
 .btn2 {
@@ -102,8 +123,9 @@ nav .nav-menu > ul > li {
     border-radius: 50px;
     padding: 20px 40px;
     background-color: rgba(0, 0, 0, 0);
+    margin-left: 20px;
 }
-.hero-card1, .hero-card2 {
+.hero-card1 {
     display: inline-block;
     background-color: rgba(128, 128, 128, 0.411);
     border-radius: 10px;
@@ -126,19 +148,23 @@ nav .nav-menu > ul > li {
     color: #FFFFFFA6;
 }
 .hero-card2 {
+    position: absolute;
+    bottom: 10px;
+    right: 700px;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.411);
+    border-radius: 10px;
+    padding: 15px 24px;
+}
+.hero-card2-container {
     display: flex;
     align-items: center;
-    width: 8%;
-    height: 50px;
-    position: absolute;
-    top: 510px;
-    right: 700px;
-    padding: 15px 15px;
 }
 .hero-card-title2 {
     font-size: 24px;
     font-weight: 900;
     margin: 0;
+    text-align: left;
 }
 .hero-card-left {
     width: 40px;
@@ -153,7 +179,35 @@ nav .nav-menu > ul > li {
 .fa-play{
     
 }
+/* Main Section */
+main {
+    max-width: 1060px;
+    margin: auto;
+}
 
+.habit-items {
+    margin: 70px 0;
+}
+.hibit-item-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 25px 0 10px 0;
+}
+.habit-image {
+    border-radius: 100px;
+}
+/* Run section */
+.run-container {
+    background-color: #222222;
+    padding: 40px 40px;
+    border-radius: 20px;
+}
+.run-image {
+    border-radius: 20px;
+}
+.run-child > .description {
+    width: 75%;
+}
 
 
 
@@ -172,7 +226,44 @@ nav .nav-menu > ul > li {
 
 
 @media only screen and (max-width: 576px){
+    /* Hero Section */
     .hero-container {
         flex-direction: column;
+    }
+    .hero-title {
+        font-size: 3rem;
+    }
+    i.fa-solid.fa-bars {
+        display: inline-block;
+    }
+    .nav-list {
+        display: none;
+    }
+    .hero-child1{
+        width: 100%;
+    }
+    .hero-card1{
+        top: 700px;
+        right: 30px;
+    }
+    .hero-card2 {
+        position: absolute;
+        bottom: -150px;
+        left: 20px;
+    }
+
+    /* Habit-Section */
+    .habit-items {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    /* Run Section */
+    .run-container {
+        flex-direction: column;
+    }
+    .run-image {
+        width: 100%;
+        margin-top: 20px;
     }
 }
