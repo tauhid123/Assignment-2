@@ -44,6 +44,11 @@
     width: 75%;
     margin: auto;
 }
+.width65 {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+}
 
 i.fa-solid.fa-bars {
     display: none;
